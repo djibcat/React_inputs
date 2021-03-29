@@ -1,0 +1,39 @@
+.userContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  /* background: #adb5bd; */
+}
+
+.userTab {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+.userContainer:nth-child(odd) > .userTab {
+  background: #dadada;
+}
+.usersDetails {
+  display: flex;
+  margin: 20px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  justify-content: center;
+}
+.usersDetails > i {
+  font-size: 20px;
+  color: red;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+}
+.usersDetails > i:hover {
+  opacity: 1;
+}
+.inputContainer > h1 {
+  margin: 50px;
+}
